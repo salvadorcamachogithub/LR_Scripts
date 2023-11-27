@@ -1,0 +1,68 @@
+[General]
+Type=RDP
+DefaultCfg=default.cfg
+MajorVersion=2023
+MinorVersion=0
+ParameterFile=SiteScope-RDP-S01 Access SiteScope.prm
+GlobalParameterFile=
+NewFunctionHeader=1
+LastActiveAction=Action
+DevelopTool=Vugen
+LastModifyVer=2023.0.0.0
+ActiveTypes=RDP
+AdditionalTypes=RDP
+GenerateTypes=RDP
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+RunType=cci
+LastCodeGenerationVer=2021.1.0.0
+DisableRegenerate=0
+Encoding=
+Description=
+ScriptLocale=en-US
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+vuser_end=vuser_end.c
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[RunLogicFiles]
+Default Profile=default.usp
+[ExtraFiles]
+caps.cfg=
+globals.h=
+[Modified Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Recorded Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Action=cci
+vuser_end=cci
+[TransactionsOrder]
+Order="SiteScope-RDP-S01-08 Close ADM Folder__*delimiter*__SiteScope-RDP-S01-07 Exit SiteScope__*delimiter*__SiteScope-RDP-S01-03 Click ADM Folder__*delimiter*__SiteScope-RDP-S01-01 Connect__*delimiter*__SiteScope-RDP-S01-06 Click on SiteScope Folder__*delimiter*__SiteScope-RDP-S01-02 Log In__*delimiter*__SiteScope-RDP-S01-05 Launch SiteScope__*delimiter*__SiteScope-RDP-S01-04 Start SiteScope Launcher"
+[StateManagement]
+LastReplayStatus=1
+[ActiveReplay]
+LastReplayedRunName=
+ActiveRunName=
+[Transactions]
+"SiteScope-RDP-S01-08 Close ADM Folder"=
+"SiteScope-RDP-S01-07 Exit SiteScope"=
+"SiteScope-RDP-S01-03 Click ADM Folder"=
+"SiteScope-RDP-S01-01 Connect"=
+"SiteScope-RDP-S01-06 Click on SiteScope Folder"=
+"SiteScope-RDP-S01-02 Log In"=
+"SiteScope-RDP-S01-05 Launch SiteScope"=
+"SiteScope-RDP-S01-04 Start SiteScope Launcher"=

@@ -1,0 +1,32 @@
+{
+    "network.automatic-ntlm-auth.allow-proxies": {
+        "default": true,
+        "locked": false,
+        "value": true,
+        "type": "Boolean"
+    },
+    "network.negotiate-auth.allow-proxies": {
+        "default": true,
+        "locked": false,
+        "value": true,
+        "type": "Boolean"
+    },
+    "browser.download.folderList": {
+        "default": true,
+        "locked": false,
+        "value": 1,
+        "type": "Int"
+    },
+    "browser.download.useDownloadDir": {
+        "default": true,
+        "locked": false,
+        "value": true,
+        "type": "Boolean"
+    },
+    "browser.helperApps.neverAsk.saveToDisk": {
+        "default": true,
+        "locked": false,
+        "value": "",
+        "type": "String"
+    }
+}

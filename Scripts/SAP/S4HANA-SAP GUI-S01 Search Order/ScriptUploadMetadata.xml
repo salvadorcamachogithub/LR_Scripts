@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>S4HANA-SAP GUI-S01 Search Order</ScriptName>
+  <Protocol>SAP GUI</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="S4HANA-SAP GUI-S01 Search Order.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="S4HANA-SAP GUI-S01 Search Order.prm" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="lr_strings.h" Filter="2" />
+    <FileEntry Name="SAP_Credentials.dat" Filter="2" />
+    <FileEntry Name="orderNumber.dat" Filter="2" />
+    <FileEntry Name="combined_S4HANA-SAP GUI-S01 Search Order.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="data\" Filter="2" />
+    <FileEntry Name="142086461440.idx" Filter="1" />
+    <FileEntry Name="150059447440.idx" Filter="1" />
+    <FileEntry Name="Bookmarks.xml" Filter="1" />
+    <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="1" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
+    <FileEntry Name="S4HANA-SAP GUI-S01 Search Order.c.pickle" Filter="1" />
+    <FileEntry Name="S4HANA-SAP GUI-S01 Search Order.ci" Filter="1" />
+    <FileEntry Name="S4HANA-SAP GUI-S01 Search Order.prm.bak" Filter="1" />
+    <FileEntry Name="S4HANA-SAPGUI-S01 Search Order.prm.bak" Filter="1" />
+    <FileEntry Name="SAP-GUI-S01 Search Order.prm.bak" Filter="1" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>
