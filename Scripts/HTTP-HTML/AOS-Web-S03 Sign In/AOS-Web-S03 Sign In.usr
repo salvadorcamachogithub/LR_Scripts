@@ -1,7 +1,7 @@
 [General]
 Type=Multi
 DefaultCfg=default.cfg
-ParameterFile=AOSNimbus-Web-S03 Sign In.prm
+ParameterFile=AOS-Web-S03 Sign In.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 RunType=cci

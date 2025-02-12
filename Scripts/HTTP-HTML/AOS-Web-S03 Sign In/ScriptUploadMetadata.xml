@@ -11,11 +11,31 @@
     <FileEntry Name="AOS-Web-S03 Sign In.usr" Filter="4" />
     <FileEntry Name="default.cfg" Filter="4" />
     <FileEntry Name="default.usp" Filter="4" />
-    <FileEntry Name="AOSNimbus-Web-S03 Sign In.prm" Filter="2" />
+    <FileEntry Name="AOS-Web-S03 Sign In.prm" Filter="2" />
     <FileEntry Name="globals.h" Filter="2" />
     <FileEntry Name="AOS_URL.dat" Filter="2" />
     <FileEntry Name="credentials.dat" Filter="2" />
+    <FileEntry Name="combined_AOS-Web-S03 Sign In.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="210980756440.idx" Filter="1" />
+    <FileEntry Name="21098075644_0kO.695.idx" Filter="1" />
+    <FileEntry Name="21098075644_5Dr.853.idx" Filter="1" />
+    <FileEntry Name="21098075644_8rW.873.idx" Filter="1" />
+    <FileEntry Name="21098075644_BHD.763.idx" Filter="1" />
+    <FileEntry Name="21098075644_cdA.715.idx" Filter="1" />
+    <FileEntry Name="21098075644_dIm.279.idx" Filter="1" />
+    <FileEntry Name="21098075644_EIW.875.idx" Filter="1" />
+    <FileEntry Name="21098075644_HnB.717.idx" Filter="1" />
+    <FileEntry Name="21098075644_inv.735.idx" Filter="1" />
+    <FileEntry Name="21098075644_lRJ.35.idx" Filter="1" />
+    <FileEntry Name="21098075644_o5e.821.idx" Filter="1" />
+    <FileEntry Name="21098075644_y8E.143.idx" Filter="1" />
+    <FileEntry Name="263728809440.idx" Filter="1" />
+    <FileEntry Name="264687910440.idx" Filter="1" />
+    <FileEntry Name="41609764440.idx" Filter="1" />
     <FileEntry Name="AOS-S03 Sign In HTTP-HTML.prm.bak" Filter="1" />
+    <FileEntry Name="AOS-Web-S03 Sign In.c.pickle" Filter="1" />
+    <FileEntry Name="AOS-Web-S03 Sign In.ci" Filter="1" />
     <FileEntry Name="AOS-Web-S03 Sign In.prm.bak" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />

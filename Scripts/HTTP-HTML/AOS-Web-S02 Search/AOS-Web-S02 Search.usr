@@ -1,7 +1,7 @@
 [General]
 Type=Multi
 DefaultCfg=default.cfg
-ParameterFile=AOSNimbus-Web-S02 Search.prm
+ParameterFile=AOS-Web-S02 Search.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 RunType=cci
