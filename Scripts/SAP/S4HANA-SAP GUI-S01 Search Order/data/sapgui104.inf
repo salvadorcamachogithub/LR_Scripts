@@ -1,0 +1,15 @@
+[ObjectProperties]
+type_as_string=GuiMainWindow
+component_name=wnd[0]
+Text=SAP
+Tooltip=
+Top=-9
+Left=-9
+Height=1168
+Width=1938
+WorkPaneWidth=171
+WorkPaneHeight=34
+[ParentWindowData]
+ParentWindowTitle=SAP
+Snapshot=snapshot101
+NoHighlightSnapshot=snapshot102

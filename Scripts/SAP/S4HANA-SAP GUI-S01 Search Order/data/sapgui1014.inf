@@ -1,0 +1,15 @@
+[ObjectProperties]
+type_as_string=GuiMainWindow
+component_name=wnd[0]
+Text=SAP Easy Access
+Tooltip=
+Top=-9
+Left=-9
+Height=1168
+Width=1938
+WorkPaneWidth=171
+WorkPaneHeight=34
+[ParentWindowData]
+ParentWindowTitle=SAP Easy Access
+Snapshot=snapshot1013
+NoHighlightSnapshot=snapshot1010

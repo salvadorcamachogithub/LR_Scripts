@@ -1,0 +1,15 @@
+[ObjectProperties]
+type_as_string=GuiCTextField
+component_name=VBAK-VBELN
+Text=4040
+Tooltip=
+Top=104
+Left=269
+Height=33
+Width=371
+MaxLength=30
+Numerical=False
+[ParentWindowData]
+ParentWindowTitle=Display Sales Documents
+Snapshot=snapshot1016
+NoHighlightSnapshot=snapshot1015

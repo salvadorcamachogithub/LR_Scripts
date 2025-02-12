@@ -1,0 +1,28 @@
+parameters:
+- blockSize: auto
+  columnName: loginUser
+  fileName: credentials.csv
+  firstDataRow: 1
+  name: loginUser
+  nextRow: random
+  nextValue: iteration
+  onEnd: loop
+  type: csv
+- blockSize: auto
+  columnName: loginPassword
+  fileName: credentials.csv
+  firstDataRow: 1
+  name: loginPassword
+  nextRow: same as loginUser
+  nextValue: iteration
+  onEnd: loop
+  type: csv
+- blockSize: auto
+  columnName: AOS_URL
+  fileName: AOS_URL.csv
+  firstDataRow: 1
+  name: AOS_URL
+  nextRow: sequential
+  nextValue: iteration
+  onEnd: loop
+  type: csv

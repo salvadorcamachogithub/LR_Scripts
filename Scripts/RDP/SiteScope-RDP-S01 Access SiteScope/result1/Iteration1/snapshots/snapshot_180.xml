@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created for RDP Active Screen Viewer , this comment is only for the Tulip viewer  -->
+<?xml-stylesheet type="text/xsl" href="../../../RDPExt1.xsl"?>
+<ASXMLStore>
+	<Step>snapshot_180</Step>
+	<ASObject>
+		<Id>1</Id>
+		<Top>195</Top>
+		<Left>38</Left>
+		<Height>0</Height>
+		<Width>0</Width>
+	</ASObject>
+</ASXMLStore>

@@ -1,0 +1,69 @@
+[General]
+Type=RTE
+DefaultCfg=default.cfg
+MajorVersion=2023
+MinorVersion=0
+ParameterFile=TE Flight-RTE-S01 View An Existing Reservation.prm
+GlobalParameterFile=
+LastActiveAction=Action
+DevelopTool=Vugen
+LastModifyVer=2023.0.0.0
+ActiveTypes=RTE
+AdditionalTypes=RTE
+GenerateTypes=RTE
+ParamLeftBrace={
+ParamRightBrace=}
+ScriptLanguage=C
+RunType=cci
+LastCodeGenerationVer=2021.1.0.0
+DisableRegenerate=0
+Encoding=
+Description=
+ScriptLocale=en-US
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+vuser_end=vuser_end.c
+[VuserProfiles]
+Profiles=Default Profile
+[CfgFiles]
+Default Profile=default.cfg
+[RunLogicFiles]
+Default Profile=default.usp
+[Modified Actions]
+vuser_init=1
+Action=1
+vuser_end=0
+[Recorded Actions]
+vuser_init=1
+Action=1
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Action=cci
+vuser_end=cci
+[TransactionsOrder]
+Order="TE Flight-RTE-S01-04 Select View An Existing Reservation__*delimiter*__TE Flight-RTE-S01-01 Connect__*delimiter*__TE Flight-RTE-S01-09 Signoff__*delimiter*__TE Flight-RTE-S01-02 Log On__*delimiter*__TE Flight-RTE-S01-06 Scroll To Reservation__*delimiter*__TE Flight-RTE-S01-03 Enter System__*delimiter*__TE Flight-RTE-S01-07 View Reservation__*delimiter*__TE Flight-RTE-S01-05 F4 To Find A Reservation__*delimiter*__TE Flight-RTE-S01-08 Exit System"
+[StateManagement]
+LastReplayStatus=1
+[ActiveReplay]
+LastReplayedRunName=
+ActiveRunName=
+[ExtraFiles]
+termset.ptc=
+termset.ptk=
+termset.pts=
+[Transactions]
+"TE Flight-RTE-S01-04 Select View An Existing Reservation"=
+"TE Flight-RTE-S01-01 Connect"=
+"TE Flight-RTE-S01-09 Signoff"=
+"TE Flight-RTE-S01-02 Log On"=
+"TE Flight-RTE-S01-06 Scroll To Reservation"=
+"TE Flight-RTE-S01-03 Enter System"=
+"TE Flight-RTE-S01-07 View Reservation"=
+"TE Flight-RTE-S01-05 F4 To Find A Reservation"=
+"TE Flight-RTE-S01-08 Exit System"=

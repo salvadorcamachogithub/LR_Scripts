@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>AOS-TruClient Native Mobile Android-S01 Browse Abandon</ScriptName>
+  <Protocol>TruClient - Native Mobile</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="Script-View.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="AOS-TruClient Native Mobile Android-S01 Browse Abandon.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="AOS-TruClient Native Mobile Android-S01 Browse Abandon.prm" Filter="2" />
+    <FileEntry Name="C-functions.c" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="JS-functions.js" Filter="2" />
+    <FileEntry Name="deviceID.dat" Filter="2" />
+    <FileEntry Name="default.xml" Filter="2" />
+    <FileEntry Name="TruClientScriptMetadata.xml" Filter="2" />
+    <FileEntry Name="TC.xsl" Filter="2" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="2" />
+    <FileEntry Name="user_modified_perfs.json" Filter="2" />
+    <FileEntry Name="combined_AOS-TruClient Native Mobile Android-S01 Browse Abandon.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="119110292440.idx" Filter="1" />
+    <FileEntry Name="11911029244_a6s.159.idx" Filter="1" />
+    <FileEntry Name="11911029244_dF2.425.idx" Filter="1" />
+    <FileEntry Name="11911029244_NqU.53.idx" Filter="1" />
+    <FileEntry Name="11911029244_R71.413.idx" Filter="1" />
+    <FileEntry Name="11911029244_R8B.77.idx" Filter="1" />
+    <FileEntry Name="11911029244_sji.225.idx" Filter="1" />
+    <FileEntry Name="11911029244_wZG.55.idx" Filter="1" />
+    <FileEntry Name="11911029244_yD1.661.idx" Filter="1" />
+    <FileEntry Name="AOS-TruClient Native Mobile Android-S01 Browse Abandon.c.pickle" Filter="1" />
+    <FileEntry Name="AOS-TruClient Native Mobile Android-S01 Browse Abandon.ci" Filter="1" />
+    <FileEntry Name="AOS-TruClient Native Mobile Android-S01 Browse Abandon.prm.bak" Filter="1" />
+    <FileEntry Name="Bookmarks.xml" Filter="1" />
+    <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
+    <FileEntry Name="default.cfg.bak" Filter="1" />
+    <FileEntry Name="interactive_replay.txt" Filter="1" />
+    <FileEntry Name="interactive_replay_Chromium.txt" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="McRuntime.properties" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="Backup\" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
+    <FileEntry Name="results\" Filter="1" />
+    <FileEntry Name="resultSnap\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

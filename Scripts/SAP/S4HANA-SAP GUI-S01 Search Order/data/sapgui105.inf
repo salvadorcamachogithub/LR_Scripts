@@ -1,0 +1,16 @@
+[ObjectProperties]
+type_as_string=GuiTextField
+component_name=RSYST-BNAME
+Text=S4H_SD_DEM
+Tooltip=
+Top=104
+Left=245
+Height=33
+Width=155
+MaxLength=12
+Numerical=False
+LabelText=*User
+[ParentWindowData]
+ParentWindowTitle=SAP
+Snapshot=snapshot104
+NoHighlightSnapshot=snapshot102

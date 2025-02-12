@@ -1,0 +1,12 @@
+
+[]
+comm-type = tn3270
+host-name = localhost
+use-tn3270e-protocol = true
+security-type = unsecured
+r2l-screen = false
+lu-name = 
+terminal-type = 3270 display
+terminal-model = 3278-2-e (24x80)
+login-command-file = 
+terminal-setup-file = 

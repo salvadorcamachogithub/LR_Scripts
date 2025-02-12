@@ -1,0 +1,10 @@
+# All times are defined in seconds
+vusers: 1
+pacing:
+    type: delay
+    mode: fixed
+    value: 5
+rampUp: 0
+duration: 6
+tearDown: 0
+

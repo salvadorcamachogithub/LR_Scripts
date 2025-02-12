@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<VugenScriptMetadata>
+  <ScriptName>AOS-TruClient-S03 Sign In</ScriptName>
+  <Protocol>TruClient - Web</Protocol>
+  <ActionFiles>
+    <FileEntry Name="vuser_init.c" Filter="2" />
+    <FileEntry Name="Action.c" Filter="2" />
+    <FileEntry Name="Lib-View.c" Filter="2" />
+    <FileEntry Name="vuser_end.c" Filter="2" />
+  </ActionFiles>
+  <GeneralFiles>
+    <FileEntry Name="AOS-TruClient-S03 Sign In.usr" Filter="4" />
+    <FileEntry Name="default.cfg" Filter="4" />
+    <FileEntry Name="default.usp" Filter="4" />
+    <FileEntry Name="AOS-TruClient-S03 Sign In.prm" Filter="2" />
+    <FileEntry Name="C-functions.c" Filter="2" />
+    <FileEntry Name="globals.h" Filter="2" />
+    <FileEntry Name="JS-functions.js" Filter="2" />
+    <FileEntry Name="AOS_URL.dat" Filter="2" />
+    <FileEntry Name="credentials.dat" Filter="2" />
+    <FileEntry Name="default.xml" Filter="2" />
+    <FileEntry Name="TruClientScriptMetadata.xml" Filter="2" />
+    <FileEntry Name="TC.xsl" Filter="2" />
+    <FileEntry Name="TCIEAuthenticationFilters.ini" Filter="2" />
+    <FileEntry Name="user_modified_perfs.json" Filter="2" />
+    <FileEntry Name="combined_AOS-TruClient-S03 Sign In.c" Filter="2" />
+    <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="profiles\" Filter="2" />
+    <FileEntry Name="198704352440.idx" Filter="1" />
+    <FileEntry Name="88180217440.idx" Filter="1" />
+    <FileEntry Name="8818021744_ciH.715.idx" Filter="1" />
+    <FileEntry Name="8818021744_J3q.33.idx" Filter="1" />
+    <FileEntry Name="8818021744_TAx.445.idx" Filter="1" />
+    <FileEntry Name="8818021744_v2R.129.idx" Filter="1" />
+    <FileEntry Name="8818021744_vP1.253.idx" Filter="1" />
+    <FileEntry Name="AOS-TruClient-S03 Sign In.c.pickle" Filter="1" />
+    <FileEntry Name="AOS-TruClient-S03 Sign In.ci" Filter="1" />
+    <FileEntry Name="AOS-TruClient-S03 Sign In.prm.bak" Filter="1" />
+    <FileEntry Name="Bookmarks.xml" Filter="1" />
+    <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="default.cfg.bak" Filter="1" />
+    <FileEntry Name="interactive_replay_TruClientBrowser.txt" Filter="1" />
+    <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv_cmd.txt" Filter="1" />
+    <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="TransactionsData.db" Filter="1" />
+    <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="Backup\" Filter="1" />
+    <FileEntry Name="results\" Filter="1" />
+    <FileEntry Name="resultSnap\" Filter="1" />
+  </GeneralFiles>
+</VugenScriptMetadata>

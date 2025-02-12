@@ -1,0 +1,13 @@
+[ObjectProperties]
+type_as_string=GuiButton
+component_name=BT_SUCH
+Text= Search
+Tooltip=Search
+Top=503
+Left=17
+Height=35
+Width=251
+[ParentWindowData]
+ParentWindowTitle=Display Sales Documents
+Snapshot=snapshot1018
+NoHighlightSnapshot=snapshot1015
