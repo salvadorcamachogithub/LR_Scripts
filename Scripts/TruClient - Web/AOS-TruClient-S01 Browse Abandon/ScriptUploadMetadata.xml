@@ -26,19 +26,16 @@
     <FileEntry Name="combined_AOS-TruClient-S01 Browse Abandon.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="profiles\" Filter="2" />
-    <FileEntry Name="200420765440.idx" Filter="1" />
-    <FileEntry Name="20042076544_cfe.957.idx" Filter="1" />
-    <FileEntry Name="20042076544_Npz.479.idx" Filter="1" />
-    <FileEntry Name="20042076544_Y7m.357.idx" Filter="1" />
+    <FileEntry Name="74317487440.idx" Filter="1" />
     <FileEntry Name="AOS-TruClient-S01 Browse Abandon.c.pickle" Filter="1" />
     <FileEntry Name="AOS-TruClient-S01 Browse Abandon.ci" Filter="1" />
-    <FileEntry Name="AOS-TruClient-S01 Browse Abandon.prm.bak" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
     <FileEntry Name="default.cfg.bak" Filter="1" />
     <FileEntry Name="interactive_replay_TruClientBrowser.txt" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.txt" Filter="1" />

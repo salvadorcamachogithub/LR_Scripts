@@ -1,14 +1,14 @@
 [General]
 Type=RDP
 DefaultCfg=default.cfg
-MajorVersion=2023
-MinorVersion=0
+MajorVersion=24
+MinorVersion=3
 ParameterFile=SiteScope-RDP-S01 Access SiteScope.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 LastActiveAction=Action
 DevelopTool=Vugen
-LastModifyVer=2023.0.0.0
+LastModifyVer=24.3.0.0
 ActiveTypes=RDP
 AdditionalTypes=RDP
 GenerateTypes=RDP
@@ -51,18 +51,18 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="SiteScope-RDP-S01-08 Close ADM Folder__*delimiter*__SiteScope-RDP-S01-07 Exit SiteScope__*delimiter*__SiteScope-RDP-S01-03 Click ADM Folder__*delimiter*__SiteScope-RDP-S01-01 Connect__*delimiter*__SiteScope-RDP-S01-06 Click on SiteScope Folder__*delimiter*__SiteScope-RDP-S01-02 Log In__*delimiter*__SiteScope-RDP-S01-05 Launch SiteScope__*delimiter*__SiteScope-RDP-S01-04 Start SiteScope Launcher"
+Order="SiteScope-RDP-S01-01 Connect__*delimiter*__SiteScope-RDP-S01-02 Log In__*delimiter*__SiteScope-RDP-S01-03 Click ADM Folder__*delimiter*__SiteScope-RDP-S01-04 Start SiteScope Launcher__*delimiter*__SiteScope-RDP-S01-05 Launch SiteScope__*delimiter*__SiteScope-RDP-S01-06 Click on AOS Monitor Folder__*delimiter*__SiteScope-RDP-S01-07 Exit SiteScope__*delimiter*__SiteScope-RDP-S01-08 Close ADM Folder"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=
 ActiveRunName=
 [Transactions]
-"SiteScope-RDP-S01-08 Close ADM Folder"=
-"SiteScope-RDP-S01-07 Exit SiteScope"=
-"SiteScope-RDP-S01-03 Click ADM Folder"=
 "SiteScope-RDP-S01-01 Connect"=
-"SiteScope-RDP-S01-06 Click on SiteScope Folder"=
 "SiteScope-RDP-S01-02 Log In"=
-"SiteScope-RDP-S01-05 Launch SiteScope"=
+"SiteScope-RDP-S01-03 Click ADM Folder"=
 "SiteScope-RDP-S01-04 Start SiteScope Launcher"=
+"SiteScope-RDP-S01-05 Launch SiteScope"=
+"SiteScope-RDP-S01-06 Click on AOS Monitor Folder"=
+"SiteScope-RDP-S01-07 Exit SiteScope"=
+"SiteScope-RDP-S01-08 Close ADM Folder"=

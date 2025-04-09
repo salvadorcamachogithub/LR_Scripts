@@ -1,14 +1,14 @@
 [General]
 Type=TruClientWeb
 DefaultCfg=default.cfg
-MajorVersion=2023
-MinorVersion=0
+MajorVersion=24
+MinorVersion=3
 ParameterFile=AOS-TruClient-S03 Sign In.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 LastActiveAction=Action
 DevelopTool=Vugen
-LastModifyVer=2023.0.0.0
+LastModifyVer=24.3.0.0
 ActiveTypes=TruClientWeb
 AdditionalTypes=TruClientWeb
 GenerateTypes=TruClientWeb
@@ -16,7 +16,7 @@ ParamLeftBrace={
 ParamRightBrace=}
 ScriptLanguage=C
 RunType=cci
-LastCodeGenerationVer=2023.0.0.0
+LastCodeGenerationVer=24.3.0.0
 DisableRegenerate=0
 Encoding=
 Description=
@@ -57,14 +57,14 @@ Action=0
 Lib-View=0
 vuser_end=0
 [Replayed Actions]
-vuser_init=0
-Action=0
-Lib-View=0
-vuser_end=0
+vuser_init=1
+Action=1
+Lib-View=1
+vuser_end=1
 [TransactionsOrder]
 Order="AOS-TruClient-S03-01 Access AOS URL__*delimiter*__AOS-TruClient-S03-02 Sign In__*delimiter*__AOS-TruClient-S03-03 Sign Out"
 [StateManagement]
-LastReplayStatus=0
+LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=
 ActiveRunName=

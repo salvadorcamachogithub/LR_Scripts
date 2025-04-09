@@ -14,7 +14,6 @@
     <FileEntry Name="credentials.csv" Filter="2" />
     <FileEntry Name="AOS_URL.csv" Filter="2" />
     <FileEntry Name="transactions.yml" Filter="2" />
-    <FileEntry Name="Action.c" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="DevWebSdk.d.ts" Filter="1" />
@@ -26,8 +25,6 @@
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
     <FileEntry Name="tsconfig.json" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
-    <FileEntry Name="vuser_end.c" Filter="1" />
-    <FileEntry Name="vuser_init.c" Filter="1" />
     <FileEntry Name="results\" Filter="1" />
   </GeneralFiles>
 </VugenScriptMetadata>

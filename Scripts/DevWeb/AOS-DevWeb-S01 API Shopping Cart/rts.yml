@@ -26,6 +26,7 @@ ssl:
   disableHTTP2: false
   ignoreBadCertificate: false
   tlsMaxVersion: tls12
+  enableHTTP3: true
 replay:
   simulateNewUser: true
   saveSnapshots: error
@@ -56,9 +57,7 @@ flow:
   run: {}
   finalize: {}
 thinkTime:
-  type: randomPercentage
+  type: ignore
   limit: -1
-  arguments:
-    min: 50
-    max: 150
+  arguments: {}
 userArguments: {}

@@ -1,4 +1,4 @@
-// Type definitions for [DevWeb SDK] [2021.2]
+// Type definitions for [DevWeb SDK] [25.1.0]
 // Project: [DevWeb]
 // Definitions by: [DevWeb Team]
 
@@ -320,6 +320,27 @@ declare namespace load {
          * Default: `"utf-8"`.
          */
         charset?: string,
+        /**
+         * When `true`, the _resources_ property of the _WebRequest_ will include only resources that isn't included in the response html body. Otherwise, the _resources_ property of the _WebRequest_ will include all the resources from the response.
+         */
+        downloadHtmlStaticResources?: boolean,
+        /**
+         * When a path is defined (absolute path, or relative path to the script directory),
+         * the response body of the WebRequest is saved to the file defined by the path.
+         * */
+        saveResponseBodyToFile?: string,
+        /**
+         * When `true`, the query string in the url is encoded. `false` will send url as-is.
+         *
+         * Default: `true`
+         */
+        enableURLEncoding?: boolean,
+        /**
+         * When `true`, the redirection url (in Location header) will be encoded.
+         *
+         * Default: `false`
+         */
+        enableRedirectionEncoding?: boolean,
     }
 
 
@@ -374,6 +395,10 @@ declare namespace load {
          * The size (in bytes) of the downloaded resource.
          */
         size: number
+        /**
+         * The resource round-trip time in milliseconds.
+         */
+        duration: number;
     }
 
     /**
@@ -577,6 +602,8 @@ declare namespace load {
          */
         headers?: Object,
         /**
+         * @deprecated use body instead.
+         *
          * The body of the method call.
          *
          * If a JSON object is provided, it is converted to a data string automatically upon send.
@@ -584,12 +611,19 @@ declare namespace load {
          */
         bodyArray?: Array<string | Object>,
         /**
+         * The body of the method call.
+         *
+         * If a JSON object is provided, it is converted to a data string automatically upon send.
+         * For example, If body equals `{"foo":"bar", "bat":10}` it is converted to `'{"foo":"bar", "bat":10}'`.
+         */
+        body?: Array<string | Object>,
+        /**
          * The path to a file whose content is used as the body of the request.
          * This can be a path relative to the script directory, or an absolute path. This property is used only if the _body_ property is not set.
          */
         bodyPath?: string,
         /**
-         * When `true`, the _body_ property of the _GrpcResponse_ is populated. Otherwise the _body_ property of the _GrpcResponse_ is set to `null`.
+         * When `true`, the _body_ property of the _GrpcResponse_ is populated. Otherwise, the _body_ property of the _GrpcResponse_ is set to `null`.
          */
         returnBody?: boolean,
         /**
@@ -623,6 +657,54 @@ declare namespace load {
          * If body equals `{"foo":"bar", "bat":10}` it is converted to `'{"foo":"bar", "bat":10}'`.
          */
         body?: string | Object,
+        /**
+         * The path to a file whose content is used as the body of the request.
+         * This can be a path relative to the script directory, or an absolute path. This property is used only if the _body_ property is not set.
+         */
+        bodyPath?: string,
+        /**
+         * When `true`, the _body_ property of the _GrpcResponse_ is populated. Otherwise, the _body_ property of the _GrpcResponse_ is set to `null`.
+         */
+        returnBody?: boolean,
+        /**
+         * An extractor object or an array of extractor objects to apply on the response of this _GrpcRequest_.
+         */
+        extractors?: ExtractorObject | Array<ExtractorObject>,
+    }
+
+    export interface BiDirectionalStreamRequestOptions {
+        /**
+         * A fully-qualified method name in 'package.Service/method' or 'package.Service.Method' format.
+         */
+        method: string,
+        /**
+         * The path to the protocol buffer .proto file.
+         */
+        protoFile: string,
+        /**
+         * The ID for the gRPC request.
+         */
+        id?: number,
+        /**
+         * A key value store that maps the header name to its value, gRPC metadata. Default `{}`.
+         */
+        headers?: Object,
+        /**
+         * @deprecated use body instead.
+         *
+         * The body of the method call.
+         *
+         * If a JSON object is provided, it is converted to a data string automatically upon send.
+         * For example, If body equals `{"foo":"bar", "bat":10}` it is converted to `'{"foo":"bar", "bat":10}'`.
+         */
+        bodyArray?: Array<string | Object>,
+        /**
+         * The body of the method call.
+         *
+         * If a JSON object is provided, it is converted to a data string automatically upon send.
+         * For example, If body equals `{"foo":"bar", "bat":10}` it is converted to `'{"foo":"bar", "bat":10}'`.
+         */
+        body?: Array<string | Object>,
         /**
          * The path to a file whose content is used as the body of the request.
          * This can be a path relative to the script directory, or an absolute path. This property is used only if the _body_ property is not set.
@@ -679,6 +761,15 @@ declare namespace load {
          * @memberof GrpcClient
          */
         serverStreamRequest(options: ServerStreamRequestOptions): GrpcServerStreamRequest;
+
+        /**
+         * Creates new bidirectional streaming RPC request instance.
+         * The options must include the _method_ and _protoFile_ properties which are mandatory, while all the other properties are optional.
+         *
+         * @returns {GrpcBiDirectionalStreamRequest}
+         * @memberof GrpcClient
+         */
+        biDirectionalStreamRequest(options: BiDirectionalStreamRequestOptions): GrpcBiDirectionalStreamRequest;
     }
 
     /**
@@ -695,6 +786,15 @@ declare namespace load {
          * @memberof UnaryMethod
          */
         sendSync(): GrpcResponse;
+
+        /**
+         * Performs async unary RPC to a gRPC server and returns a promise which is resolved
+         * with a GrpcResponse object or rejected with an unhandled error.
+         *
+         * @returns {Promise < GrpcResponse >}
+         * @memberof UnaryMethod
+         */
+        send(): Promise<GrpcResponse>;
     }
 
     /**
@@ -711,6 +811,15 @@ declare namespace load {
          * @memberof ClientStreamMethod
          */
         sendSync(): GrpcResponse;
+
+        /**
+         * Performs async client streaming RPC to a gRPC server and returns a promise which is resolved
+         * with a GrpcResponse object or rejected with an unhandled error.
+         *
+         * @returns {Promise < GrpcResponse >}
+         * @memberof ClientStreamMethod
+         */
+        send(): Promise<GrpcResponse>;
     }
 
     /**
@@ -727,6 +836,40 @@ declare namespace load {
          * @memberof ServerStreamMethod
          */
         sendSync(): GrpcResponse;
+
+        /**
+         * Performs async gRPC server streaming to a gRPC server and returns a promise which is resolved
+         * with a GrpcResponse object or rejected with an unhandled error.
+         *
+         * @returns {Promise < GrpcResponse >}
+         * @memberof ServerStreamMethod
+         */
+        send(): Promise<GrpcResponse>;
+    }
+
+    /**
+     * Creates a server-streaming RPC request object.
+     *
+     * @class GrpcBiDirectionalStreamRequest
+     */
+    export class GrpcBiDirectionalStreamRequest {
+        /**
+         * Performs gRPC bidirectional streaming RPC with a gRPC server.
+         * When called, the script execution is blocked until a response or error is returned. Returns the resulting _GrpcResponse_ object or throws an exception.
+         *
+         * @returns {GrpcResponse}
+         * @memberof BiDirectionalStreamMethod
+         */
+        sendSync(): GrpcResponse;
+
+        /**
+         * Performs async gRPC bidirectional streaming to a gRPC server and returns a promise which is resolved
+         * with a GrpcResponse object or rejected with an unhandled error.
+         *
+         * @returns {Promise < GrpcResponse >}
+         * @memberof BiDirectionalStreamMethod
+         */
+        send(): Promise<GrpcResponse>;
     }
 
     /**
@@ -772,6 +915,96 @@ declare namespace load {
          * The results of the extractor applied on the response (refer to the full documentation for more information on the format of this object).
          */
         extractors: Object;
+    }
+
+    export interface OnSSEOpenOptions {
+        /**
+         * A unique number indicating the connection number.
+         */
+        id: string;
+        /**
+         * The status code of the response.
+         */
+        status: number;
+        /**
+         *  A key value store of the headers in the response sent by the server.
+         */
+        headers: Object;
+    }
+
+    export interface SSEConstructorOptions {
+        /**
+         * The SSE endpoint in http:// or https:// format.
+         */
+        url: string,
+        /**
+         * The HTTP method that will be used for the request.
+         */
+        method?: string,
+        /**
+         * The delimiter that separates between events. the default is "\n\n".
+         */
+        separator?: string,
+        /**
+         * A key value store that maps the header name to its value.
+         */
+        headers?: string,
+        /**
+         * The body of the method call. Default `""`.
+         *
+         * If a JSON object is provided, it is converted to a data string automatically upon send.
+         * For example,
+         * If body equals `{"foo":"bar", "bat":10}` it is converted to `'{"foo":"bar", "bat":10}'`.
+         */
+        body?: string | Object,
+        /**
+         * A callback function for the "onMessage" event.
+         */
+        onMessage(msg: string): void,
+
+        /**
+         * A callback function for the "onError" event.
+         */
+        onError?(error: string): void,
+
+        /**
+         * A callback function for the "onOpen" event.
+         */
+        onOpen?(msg: OnSSEOpenOptions): void,
+    }
+
+    export class SSE {
+        /**
+         * Creates a new SSE instance. The user should provide the _options_ argument
+         * which will override any default options. The options must include at least a "url"
+         * property which is mandatory, while all the other properties are optional.
+         */
+        constructor(options: SSEConstructorOptions);
+
+        /**
+         * Opens the SSE connection to the remote host. After calling this function it is possible to receive events from the server.
+        */
+        open(): void;
+
+        /**
+         * Closes the connection to the server.
+         */
+        close(): void;
+
+        /**
+         * A callback function for the "onMessage" event.
+         */
+        onMessage(msg: string): void;
+
+        /**
+         * A callback function for the "onError" event.
+         */
+        onError(error: string): void;
+
+        /**
+         * A callback function for the "onOpen" event.
+         */
+        onOpen(msg: OnSSEOpenOptions): void;
     }
 
     /**
@@ -1020,10 +1253,26 @@ declare namespace load {
     export function sleep(time: number): void;
 
     /**
+     * Pauses the running of the script for the given number of seconds (time can have a fractional part to simulate milliseconds).
+     * This is non-blocking operation.
+     * @param {number} time - The number of seconds to pause.
+     * @returns {Promise < Object >}
+     */
+    export function sleepAsync(time: number): Promise<Object>;
+
+    /**
      * Pauses the running of the script for the given number of seconds (time can have fractional part to simulate milliseconds).
      * @param {number} time - The number of seconds to pause.
      */
     export function thinkTime(time: number): void;
+
+    /**
+     * Pauses the running of the script for the given number of seconds (time can have a fractional part to simulate milliseconds).
+     * This is non-blocking operation.
+     * @param {number} time - The number of seconds to pause.
+     * @returns {Promise < Object >}
+     */
+    export function thinkTimeAsync(time: number): Promise<Object>;
 
     /**
      * A function that allows you to stop the execution of the script.
@@ -1197,7 +1446,7 @@ declare namespace load {
         includeRedirections?: boolean;
         /**
          * The converters are applied to the extracted value and convert it from one format to another. The property value is a comma separated list of converters to run sequentially on the extracted value.
-         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`
+         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`, `evalString`
          */
         converters?: string;
 
@@ -1266,7 +1515,7 @@ declare namespace load {
         includeRedirections?: boolean;
         /**
          * The converters are applied to the extracted value and convert it from one format to another. The property value is a comma-separated list of converters to run sequentially on the extracted value.
-         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`
+         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`, `evalString`
          */
         converters?: string;
 
@@ -1301,7 +1550,7 @@ declare namespace load {
         returnMultipleValues?: boolean;
         /**
          * The converters are applied to the extracted value and convert it from one format to another. The property value is a comma separated list of converters to run sequentially on the extracted value.
-         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`
+         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`, `evalString`
          */
         converters?: string;
 
@@ -1350,7 +1599,7 @@ declare namespace load {
         /**
          * The converters are applied to the extracted value and convert it from one format to another.
          * The property value is a comma separated list of converters to run sequentially on the extracted value.
-         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`
+         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`, `evalString`
          */
         converters?: string;
 
@@ -1410,7 +1659,7 @@ declare namespace load {
         /**
          * The converters are applied to the extracted value and convert it from one format to another.
          * The property value is a comma separated list of converters to run sequentially on the extracted value.
-         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`
+         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`, `evalString`
          */
         converters?: string;
 
@@ -1477,7 +1726,7 @@ declare namespace load {
         /**
          * The converters are applied to the extracted value and convert it from one format to another.
          * The property value is a comma separated list of converters to run sequentially on the extracted value.
-         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`
+         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`, `evalString`
          */
         converters?: string;
 
@@ -1550,7 +1799,7 @@ declare namespace load {
         /**
          * The converters are applied to the extracted value and convert it from one format to another.
          * The property value is a comma separated list of converters to run sequentially on the extracted value.
-         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`.
+         * Supported converters are: `urlEncode`, `urlDecode`, `htmlEscape`, `htmlUnescape`, `base64Encode`, `base64Decode`, `evalString`
          */
         converters?: string;
 
@@ -1678,9 +1927,13 @@ declare namespace load {
          */
         digits?: boolean;
         /**
-         If `true` specialChars `[-_@#!$%&(){}]` will be used as part of generated string.
+         If `true`, specialChars `[-_@#!$%&(){}]` will be used as part of generated string.
          */
         specialChars?: boolean;
+        /**
+         If `true`, hexadecimal will be used as part of generated string.
+         */
+        hex?: boolean;
         /**
          * If specified generated string will be based on custom character set.
          */
@@ -1713,6 +1966,29 @@ declare namespace load {
          * The encoding of the output
          */
         outputEncoding?: load.HashOutputEncoding;
+    }
+
+    export interface TotpOptions {
+        /**
+         * Number of seconds a TOTP hash is valid for. Defaults to 30 seconds.
+         */
+        period: number;
+
+        /**
+         * Time in seconds the totp device time is allowed to drift in respect to the server time.
+         */
+        skew: number;
+
+        /**
+         * The number of digits the OTP consist of (minimum is 4).
+         */
+        digits: number;
+
+        /**
+         * The algorithm that is used to generate the OTP. It is used on authentication and registration.
+         * Algorithms supported are: SHA1, SHA256, SHA512, MD5.
+         */
+        algorithm: load.HashAlgorithm;
     }
 
     enum HashAlgorithm {
@@ -1858,6 +2134,17 @@ declare namespace load {
         export function samlEncode(value: string): string
 
         /**
+         * Returns a Time-based One Time Password based on the _secret_, _timestamp_ and _options_ if provided.
+         *
+         * @param {string} secret - The user's secret.
+         * @param {number} timestamp - Unix timestamp.
+         * @param {object} options - The TOTP options: Period, Skew, Digits, Algorithm (default: {Period: 30, Skew: 1, Digits: 6, Algorithm: sha1}.
+         * @returns {string} - The TOTP token
+         * @memberof utils
+         */
+        export function totp(secret: string, timestamp: number, options?: load.TotpOptions): string
+
+        /**
          * This class provides a mechanism to chain calls to other _utils_ functions or custom functions that have one of the signatures:
          * `func()`, `func(value)`, `func(value,options)`.
          */
@@ -1880,6 +2167,101 @@ declare namespace load {
              */
             run(value: any): any
         }
+
+    }
+
+    export namespace net {
+        /**
+         * Returns a SRV record target with respect to its priority and weight.
+         * If several SRV records have the same priority, then the target will be selected randomly with
+         * respect to the weight distribution. See also https://datatracker.ietf.org/doc/html/rfc2782.
+         *
+         * @param {string} service - The service name
+         * @param {string} protocol - The service protocol.
+         * @param {string} domain - The domain name.
+         */
+        export function lookupService(service, protocol, domain): string
+
+
+        /**
+         * Returns an array of local IPs configured on the local machine.
+         *
+         * @param {string} ipVersion - The version of the ips to return. 'IPv4'/'4'/4, 'IPv6'/'6'/6, 'All'/'all'. Default: `IPv4`.
+         */
+        export function getIPList(ipVersion): string[]
+
+        /**
+         * Set an IP for the current Vuser. It should be a valid IP on the local machine.
+         *
+         * @param {string} ip - The ip to set
+         */
+        export function setIP(ip): void
+
+        /**
+         * Get the IP for the current Vuser. Can be used only when multiIP is active, or if IP was set by setIP function.
+         */
+        export function getIP(): string
+    }
+
+    export namespace azure {
+        export interface KeyVaultTokenOptions {
+            /**
+             * the azure key-vault uri.
+             */
+            vaultName: string,
+            /**
+             * the azure tenant id.
+             */
+            tenantId: string,
+            /**
+             * The azure client id.
+             */
+            clientId: string,
+            /**
+             * @param The azure client secret.
+             */
+            clientSecret: string
+        }
+
+        export interface KeyVaultSecretOptions {
+            /**
+             * the azure secret name.
+             */
+            secret: string,
+            /**
+             * the azure token id.
+             */
+            token: string,
+        }
+        /**
+         * Returns key-vault token (string) which represents a key vault client, in order to use
+         * other azure functions.
+         *
+         * @param {string} vaultName - the azure key-vault uri.
+         * @param {string} tenantId - the azure tenant id.
+         * @param {string} clientId - The azure client id.
+         * @param {string} clientSecret - The azure client secret.
+         */
+         export function getToken(vaultName: string, tenantId: string, clientId: string, clientSecret: string): string
+
+        /**
+         * Same as above receiving object.
+         */
+        export function getToken(options: KeyVaultTokenOptions): string
+
+         /**
+         * Returns kay vault secret value which represents a key vault client, in order to use 
+         * other azure functions.
+         *
+         * @param {string} secret - the azure secret name.
+         * @param {string} token - the azure token id.
+         */
+        export function getSecret(secret: string, token: string): string
+
+        /**
+         * Same as above receiving object.
+         */
+        export function getSecret(options: KeyVaultSecretOptions): string
     }
 
     /**
@@ -2232,7 +2614,7 @@ declare namespace load {
      * The rendezvous function creates a rendezvous point in a DevWeb script.
      * When this statement is executed, the Vuser stops running and waits for permission to continue.
      * This function can only be used in an action section, and not in an initialize or finalize sections.
-     * This capability is not available when executing scripts locally using LoadRunner Developer.
+     * This capability is not available when executing scripts locally using OpenText™ Performance Engineering for Developers.
      *
      * @param {string} name - The rendezvous name (name must be without spaces).
      */

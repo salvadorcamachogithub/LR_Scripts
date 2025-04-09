@@ -21,12 +21,15 @@
     <FileEntry Name="default.xml" Filter="2" />
     <FileEntry Name="TruClientScriptMetadata.xml" Filter="2" />
     <FileEntry Name="TC.xsl" Filter="2" />
+    <FileEntry Name="OutputColoringDatabase.json" Filter="2" />
     <FileEntry Name="TCIEAuthenticationFilters.ini" Filter="2" />
     <FileEntry Name="user_modified_perfs.json" Filter="2" />
     <FileEntry Name="combined_AOS-TruClient-S03 Sign In.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="profiles\" Filter="2" />
+    <FileEntry Name="192436484440.idx" Filter="1" />
     <FileEntry Name="198704352440.idx" Filter="1" />
+    <FileEntry Name="4861494440.idx" Filter="1" />
     <FileEntry Name="88180217440.idx" Filter="1" />
     <FileEntry Name="8818021744_ciH.715.idx" Filter="1" />
     <FileEntry Name="8818021744_J3q.33.idx" Filter="1" />
@@ -38,15 +41,24 @@
     <FileEntry Name="AOS-TruClient-S03 Sign In.prm.bak" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
+    <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
     <FileEntry Name="default.cfg.bak" Filter="1" />
+    <FileEntry Name="interactive_replay_Chromium.txt" Filter="1" />
     <FileEntry Name="interactive_replay_TruClientBrowser.txt" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
+    <FileEntry Name="mdrv.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
+    <FileEntry Name="output.bak" Filter="1" />
+    <FileEntry Name="output.txt" Filter="1" />
+    <FileEntry Name="replay.har" Filter="1" />
+    <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
+    <FileEntry Name="shunra.shunra" Filter="1" />
     <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
     <FileEntry Name="Backup\" Filter="1" />
+    <FileEntry Name="result1\" Filter="1" />
     <FileEntry Name="results\" Filter="1" />
     <FileEntry Name="resultSnap\" Filter="1" />
   </GeneralFiles>

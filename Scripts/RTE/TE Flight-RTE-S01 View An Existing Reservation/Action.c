@@ -1,6 +1,38 @@
 Action()
 {
 
+/*
+
+Updated: 04.2025  
+Script created by Salvador Camacho
+
+This script requires "Reflection TE Flight Demo" to be running, double-click on it, located under:  
+C:\ADM Solutions
+
+This script was created with best practices, so it is more resilient, such as:
+* Transaction naming
+* No third party
+* One validation per transaction
+* Think times at the end of each transaction to better simulate user behavior
+* Credentials parametrized
+
+This script uses Terminal Emulation to log in to a Flight application, find a reservation, view reservation and exit the system
+
+Runtime Settings were set to log only on errors and generate snapshot on errors, think times 75% to 150%
+
+This script has 9 transactions:  
+TE Flight-RTE-S01-01 Connect  
+TE Flight-RTE-S01-02 Log On  
+TE Flight-RTE-S01-03 Enter System  
+TE Flight-RTE-S01-04 Select View An Existing Reservation  
+TE Flight-RTE-S01-05 F4 To Find A Reservation  
+TE Flight-RTE-S01-06 Scroll To Reservation  
+TE Flight-RTE-S01-07 View Reservation  
+TE Flight-RTE-S01-08 Exit System  
+TE Flight-RTE-S01-09 Signoff
+
+*/
+
 lr_start_transaction("TE Flight-RTE-S01-01 Connect");
 
 	/* MAKE SURE TO START THE TE MERCURY FLIGHT DEMO SERVER FIRST */

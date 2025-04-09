@@ -22,6 +22,10 @@ Action()
 	lr_start_transaction("AOS-TruClient-S02-04 Add To Cart");
 	truclient_step("10", "Click on ADD TO CART button", "snapshot=Action_10.inf");
 	lr_end_transaction("AOS-TruClient-S02-04 Add To Cart",0);
+	truclient_step("11", "Wait Math.floor(Math.random() * (26- 15) + 15) seconds", "snapshot=Action_11.inf");
+	lr_start_transaction("AOS-TruClient-S02-05 Checkout");
+	truclient_step("14", "Click on CHECKOUT button", "snapshot=Action_14.inf");
+	lr_end_transaction("AOS-TruClient-S02-05 Checkout",0);
 
 	return 0;
 }

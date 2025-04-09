@@ -1,13 +1,13 @@
 [General]
 Type=RTE
 DefaultCfg=default.cfg
-MajorVersion=2023
-MinorVersion=0
+MajorVersion=24
+MinorVersion=3
 ParameterFile=TE Flight-RTE-S01 View An Existing Reservation.prm
 GlobalParameterFile=
 LastActiveAction=Action
 DevelopTool=Vugen
-LastModifyVer=2023.0.0.0
+LastModifyVer=24.3.0.0
 ActiveTypes=RTE
 AdditionalTypes=RTE
 GenerateTypes=RTE
@@ -47,7 +47,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="TE Flight-RTE-S01-04 Select View An Existing Reservation__*delimiter*__TE Flight-RTE-S01-01 Connect__*delimiter*__TE Flight-RTE-S01-09 Signoff__*delimiter*__TE Flight-RTE-S01-02 Log On__*delimiter*__TE Flight-RTE-S01-06 Scroll To Reservation__*delimiter*__TE Flight-RTE-S01-03 Enter System__*delimiter*__TE Flight-RTE-S01-07 View Reservation__*delimiter*__TE Flight-RTE-S01-05 F4 To Find A Reservation__*delimiter*__TE Flight-RTE-S01-08 Exit System"
+Order="TE Flight-RTE-S01-01 Connect__*delimiter*__TE Flight-RTE-S01-02 Log On__*delimiter*__TE Flight-RTE-S01-03 Enter System__*delimiter*__TE Flight-RTE-S01-04 Select View An Existing Reservation__*delimiter*__TE Flight-RTE-S01-05 F4 To Find A Reservation__*delimiter*__TE Flight-RTE-S01-06 Scroll To Reservation__*delimiter*__TE Flight-RTE-S01-07 View Reservation__*delimiter*__TE Flight-RTE-S01-08 Exit System__*delimiter*__TE Flight-RTE-S01-09 Signoff"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -58,12 +58,12 @@ termset.ptc=
 termset.ptk=
 termset.pts=
 [Transactions]
-"TE Flight-RTE-S01-04 Select View An Existing Reservation"=
 "TE Flight-RTE-S01-01 Connect"=
-"TE Flight-RTE-S01-09 Signoff"=
 "TE Flight-RTE-S01-02 Log On"=
-"TE Flight-RTE-S01-06 Scroll To Reservation"=
 "TE Flight-RTE-S01-03 Enter System"=
-"TE Flight-RTE-S01-07 View Reservation"=
+"TE Flight-RTE-S01-04 Select View An Existing Reservation"=
 "TE Flight-RTE-S01-05 F4 To Find A Reservation"=
+"TE Flight-RTE-S01-06 Scroll To Reservation"=
+"TE Flight-RTE-S01-07 View Reservation"=
 "TE Flight-RTE-S01-08 Exit System"=
+"TE Flight-RTE-S01-09 Signoff"=

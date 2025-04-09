@@ -33,6 +33,7 @@
     <FileEntry Name="16504048844_rhJ.377.idx" Filter="1" />
     <FileEntry Name="16504048844_RY7.455.idx" Filter="1" />
     <FileEntry Name="16504048844_YAR.15.idx" Filter="1" />
+    <FileEntry Name="230201600440.idx" Filter="1" />
     <FileEntry Name="AOS-S02 Search TruClient - Mobile Web.prm.bak" Filter="1" />
     <FileEntry Name="AOS-TruClient Mobile Web-S02 Search.c.pickle" Filter="1" />
     <FileEntry Name="AOS-TruClient Mobile Web-S02 Search.ci" Filter="1" />
@@ -43,7 +44,6 @@
     <FileEntry Name="default.cfg.bak" Filter="1" />
     <FileEntry Name="interactive_replay.txt" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
-    <FileEntry Name="mdrv.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />

@@ -22,60 +22,13 @@
     <FileEntry Name="TC.xsl" Filter="2" />
     <FileEntry Name="OutputColoringDatabase.json" Filter="2" />
     <FileEntry Name="user_modified_perfs.json" Filter="2" />
-    <FileEntry Name="combined_AOS-TruClient Native Mobile iOS-S01 Browse Abandon.c" Filter="2" />
-    <FileEntry Name="pre_cci.c" Filter="2" />
-    <FileEntry Name="194753716440.idx" Filter="1" />
-    <FileEntry Name="19475371644_1Ln.405.idx" Filter="1" />
-    <FileEntry Name="19475371644_20Z.961.idx" Filter="1" />
-    <FileEntry Name="19475371644_32B.719.idx" Filter="1" />
-    <FileEntry Name="19475371644_6Bm.559.idx" Filter="1" />
-    <FileEntry Name="19475371644_BYu.995.idx" Filter="1" />
-    <FileEntry Name="19475371644_C4y.89.idx" Filter="1" />
-    <FileEntry Name="19475371644_CX1.849.idx" Filter="1" />
-    <FileEntry Name="19475371644_DUM.57.idx" Filter="1" />
-    <FileEntry Name="19475371644_DUV.267.idx" Filter="1" />
-    <FileEntry Name="19475371644_GEG.393.idx" Filter="1" />
-    <FileEntry Name="19475371644_HRY.239.idx" Filter="1" />
-    <FileEntry Name="19475371644_HYc.267.idx" Filter="1" />
-    <FileEntry Name="19475371644_iAg.105.idx" Filter="1" />
-    <FileEntry Name="19475371644_iRj.293.idx" Filter="1" />
-    <FileEntry Name="19475371644_IUz.373.idx" Filter="1" />
-    <FileEntry Name="19475371644_LCE.69.idx" Filter="1" />
-    <FileEntry Name="19475371644_MlZ.301.idx" Filter="1" />
-    <FileEntry Name="19475371644_mOq.933.idx" Filter="1" />
-    <FileEntry Name="19475371644_nNg.977.idx" Filter="1" />
-    <FileEntry Name="19475371644_OO5.195.idx" Filter="1" />
-    <FileEntry Name="19475371644_P0Z.611.idx" Filter="1" />
-    <FileEntry Name="19475371644_pYW.251.idx" Filter="1" />
-    <FileEntry Name="19475371644_sLV.653.idx" Filter="1" />
-    <FileEntry Name="19475371644_toq.123.idx" Filter="1" />
-    <FileEntry Name="19475371644_uxC.21.idx" Filter="1" />
-    <FileEntry Name="19475371644_WRO.277.idx" Filter="1" />
-    <FileEntry Name="19475371644_Ww6.275.idx" Filter="1" />
-    <FileEntry Name="19475371644_yaQ.423.idx" Filter="1" />
-    <FileEntry Name="19475371644_YAR.213.idx" Filter="1" />
-    <FileEntry Name="19475371644_YAR.301.idx" Filter="1" />
-    <FileEntry Name="19475371644_YAR.337.idx" Filter="1" />
-    <FileEntry Name="19475371644_YAR.47.idx" Filter="1" />
-    <FileEntry Name="19475371644_YAR.533.idx" Filter="1" />
-    <FileEntry Name="19475371644_YAR.599.idx" Filter="1" />
-    <FileEntry Name="19475371644_YAR.767.idx" Filter="1" />
-    <FileEntry Name="19475371644_YAR.807.idx" Filter="1" />
-    <FileEntry Name="19475371644_YAR.849.idx" Filter="1" />
-    <FileEntry Name="19475371644_YAR.911.idx" Filter="1" />
-    <FileEntry Name="19475371644_YAR.941.idx" Filter="1" />
-    <FileEntry Name="19475371644_yPs.705.idx" Filter="1" />
-    <FileEntry Name="19475371644_zEk.177.idx" Filter="1" />
-    <FileEntry Name="19475371644_ZEm.779.idx" Filter="1" />
-    <FileEntry Name="32853505440.idx" Filter="1" />
-    <FileEntry Name="AOS-TruClient Native Mobile iOS-S01 Browse Abandon.c.pickle" Filter="1" />
-    <FileEntry Name="AOS-TruClient Native Mobile iOS-S01 Browse Abandon.ci" Filter="1" />
     <FileEntry Name="AOS-TruClient Native Mobile iOS-S01 Browse Abandon.prm.bak" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
     <FileEntry Name="default.cfg.bak" Filter="1" />
     <FileEntry Name="interactive_replay.txt" Filter="1" />
+    <FileEntry Name="interactive_replay_Chromium.txt" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
     <FileEntry Name="McRuntime.properties" Filter="1" />
     <FileEntry Name="mdrvE6j.787.log" Filter="1" />

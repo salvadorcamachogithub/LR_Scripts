@@ -1,8 +1,8 @@
 [General]
 Type=DevWeb
 DefaultCfg=default.cfg
-MajorVersion=2023
-MinorVersion=0
+MajorVersion=24
+MinorVersion=3
 ParameterFile=
 GlobalParameterFile=
 RunType=DevWeb
@@ -12,7 +12,7 @@ LastActiveAction=Main
 ScriptLanguage=JavaScript
 Encoding=UTF8
 DevelopTool=Vugen
-LastModifyVer=2023.0.0.0
+LastModifyVer=24.3.0.0
 ActiveTypes=DevWeb
 AdditionalTypes=DevWeb
 GenerateTypes=DevWeb

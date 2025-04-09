@@ -25,6 +25,7 @@
     <FileEntry Name="combined_AOS-TruClient Mobile Web-S01 Browse Abandon.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="profiles\" Filter="2" />
+    <FileEntry Name="16141540440.idx" Filter="1" />
     <FileEntry Name="256179604440.idx" Filter="1" />
     <FileEntry Name="25617960444_4g7.337.idx" Filter="1" />
     <FileEntry Name="25617960444_eNO.373.idx" Filter="1" />
@@ -48,7 +49,6 @@
     <FileEntry Name="default.cfg.bak" Filter="1" />
     <FileEntry Name="interactive_replay.txt" Filter="1" />
     <FileEntry Name="logfile.log" Filter="1" />
-    <FileEntry Name="mdrv.log" Filter="1" />
     <FileEntry Name="mdrv_cmd.txt" Filter="1" />
     <FileEntry Name="options.txt" Filter="1" />
     <FileEntry Name="output.bak" Filter="1" />

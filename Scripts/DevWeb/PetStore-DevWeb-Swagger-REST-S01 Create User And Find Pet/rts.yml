@@ -26,6 +26,7 @@ ssl:
   disableHTTP2: false
   ignoreBadCertificate: false
   tlsMaxVersion: tls12
+  enableHTTP3: true
 replay:
   simulateNewUser: true
   saveSnapshots: always
