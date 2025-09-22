@@ -35,7 +35,7 @@ lr_think_time(10);
 lr_start_transaction("S4HANA-SAP GUI-S01-01 Log In");
 
 	sapgui_open_connection_ex(connection_string1, 
-		"S/4HANA 2020 FPS01", 
+		"S4H (S/4 Hana 2023)", 
 		"con[0]");
 
 	sapgui_select_active_connection("con[0]");
@@ -44,8 +44,8 @@ lr_start_transaction("S4HANA-SAP GUI-S01-01 Log In");
 
 	sapgui_select_active_window("wnd[0]");
 
-	sapgui_window_resize("171", 
-		"34", 
+	sapgui_window_resize("108", 
+		"15", 
 		BEGIN_OPTIONAL, 
 			"AdditionalInfo=sapgui104", 
 		END_OPTIONAL);
@@ -59,11 +59,11 @@ lr_start_transaction("S4HANA-SAP GUI-S01-01 Log In");
 		BEGIN_OPTIONAL, 
 			"AdditionalInfo=sapgui1012", 
 		END_OPTIONAL);
-
+	
 lr_end_transaction("S4HANA-SAP GUI-S01-01 Log In",LR_AUTO);
 
 	lr_think_time(10);
-
+	
 
 lr_start_transaction("S4HANA-SAP GUI-S01-02 Enter Tcode");
 
@@ -76,10 +76,11 @@ lr_start_transaction("S4HANA-SAP GUI-S01-02 Enter Tcode");
 		BEGIN_OPTIONAL, 
 			"AdditionalInfo=sapgui1014", 
 		END_OPTIONAL);
-		
+
 lr_end_transaction("S4HANA-SAP GUI-S01-02 Enter Tcode",LR_AUTO);
 
 	lr_think_time(10);
+	
 	
 lr_start_transaction("S4HANA-SAP GUI-S01-03 Search Order");
 
@@ -95,24 +96,30 @@ lr_start_transaction("S4HANA-SAP GUI-S01-03 Search Order");
 		BEGIN_OPTIONAL, 
 			"AdditionalInfo=sapgui1019", 
 		END_OPTIONAL);
-
+		
+	sapgui_status_bar_get_text("paramStatusBarText", 
+		BEGIN_OPTIONAL, 
+			"Recorded status bar text: Consider the subsequent documents", 
+			"AdditionalInfo=sapgui1022", 
+		END_OPTIONAL);
+		
 lr_end_transaction("S4HANA-SAP GUI-S01-03 Search Order",LR_AUTO);
 
 	lr_think_time(10);
-
+	
 
 lr_start_transaction("S4HANA-SAP GUI-S01-04 Log Off");
 
 	sapgui_press_button("Exit", 
 		btn1, 
 		BEGIN_OPTIONAL, 
-			"AdditionalInfo=sapgui1022", 
+			"AdditionalInfo=sapgui1023", 
 		END_OPTIONAL);
 
 	sapgui_press_button("Exit", 
 		btn1, 
 		BEGIN_OPTIONAL, 
-			"AdditionalInfo=sapgui1025", 
+			"AdditionalInfo=sapgui1026", 
 		END_OPTIONAL);
 
 	sapgui_select_active_window("wnd[1]");
@@ -120,7 +127,7 @@ lr_start_transaction("S4HANA-SAP GUI-S01-04 Log Off");
 	sapgui_press_button("Yes", 
 		btnSPOP1, 
 		BEGIN_OPTIONAL, 
-			"AdditionalInfo=sapgui1028", 
+			"AdditionalInfo=sapgui1029", 
 		END_OPTIONAL);
 
 lr_end_transaction("S4HANA-SAP GUI-S01-04 Log Off",LR_AUTO);

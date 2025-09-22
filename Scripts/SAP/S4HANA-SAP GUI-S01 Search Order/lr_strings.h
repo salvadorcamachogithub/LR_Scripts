@@ -15,8 +15,8 @@ const char* btnSPOP1=
 
 const char* connection_string1=
 		"   /SAP_CODEPAGE=1100   /"
-		"FULLMENU SNC_PARTNERNAME=\"\" SNC_QOP=-1 /H/172.16.239.201/S/3200 /"
-		"UPDOWNLOAD_CP=2";
+		"FULLMENU SNC_PARTNERNAME=\"\" SNC_QOP=-1 /H/sap-hana.mfdemoportal.com/"
+		"S/3200 /UPDOWNLOAD_CP=2";
 
 
 

@@ -19,8 +19,52 @@
     <FileEntry Name="combined_S4HANA-SAP GUI-S01 Search Order.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
     <FileEntry Name="data\" Filter="2" />
-    <FileEntry Name="142086461440.idx" Filter="1" />
-    <FileEntry Name="150059447440.idx" Filter="1" />
+    <FileEntry Name="56510643440.idx" Filter="1" />
+    <FileEntry Name="5651064344_2xg.395.idx" Filter="1" />
+    <FileEntry Name="5651064344_59y.801.idx" Filter="1" />
+    <FileEntry Name="5651064344_5V2.41.idx" Filter="1" />
+    <FileEntry Name="5651064344_8Lr.119.idx" Filter="1" />
+    <FileEntry Name="5651064344_8rW.873.idx" Filter="1" />
+    <FileEntry Name="5651064344_CEe.467.idx" Filter="1" />
+    <FileEntry Name="5651064344_Fp2.491.idx" Filter="1" />
+    <FileEntry Name="5651064344_h3H.967.idx" Filter="1" />
+    <FileEntry Name="5651064344_HMi.195.idx" Filter="1" />
+    <FileEntry Name="5651064344_I4C.611.idx" Filter="1" />
+    <FileEntry Name="5651064344_kBC.571.idx" Filter="1" />
+    <FileEntry Name="5651064344_lIF.653.idx" Filter="1" />
+    <FileEntry Name="5651064344_NjN.199.idx" Filter="1" />
+    <FileEntry Name="5651064344_nQT.691.idx" Filter="1" />
+    <FileEntry Name="5651064344_Orq.1.idx" Filter="1" />
+    <FileEntry Name="5651064344_pFN.963.idx" Filter="1" />
+    <FileEntry Name="5651064344_rjJ.235.idx" Filter="1" />
+    <FileEntry Name="5651064344_UBz.101.idx" Filter="1" />
+    <FileEntry Name="5651064344_v5n.249.idx" Filter="1" />
+    <FileEntry Name="5651064344_xwO.951.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.101.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.145.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.193.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.207.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.209.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.243.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.25.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.255.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.259.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.287.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.299.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.405.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.459.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.483.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.559.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.651.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.665.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.77.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.879.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.95.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.977.idx" Filter="1" />
+    <FileEntry Name="5651064344_YAR.981.idx" Filter="1" />
+    <FileEntry Name="5651064344_Z8d.93.idx" Filter="1" />
+    <FileEntry Name="5651064344_ZZ9.735.idx" Filter="1" />
+    <FileEntry Name="90368559440.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
@@ -34,13 +78,10 @@
     <FileEntry Name="ReplaySummaryReport.xml" Filter="1" />
     <FileEntry Name="S4HANA-SAP GUI-S01 Search Order.c.pickle" Filter="1" />
     <FileEntry Name="S4HANA-SAP GUI-S01 Search Order.ci" Filter="1" />
-    <FileEntry Name="S4HANA-SAP GUI-S01 Search Order.prm.bak" Filter="1" />
-    <FileEntry Name="S4HANA-SAPGUI-S01 Search Order.prm.bak" Filter="1" />
-    <FileEntry Name="SAP-GUI-S01 Search Order.prm.bak" Filter="1" />
     <FileEntry Name="ScriptUploadMetadata.xml" Filter="1" />
-    <FileEntry Name="ThumbnailsCache.tmp" Filter="1" />
     <FileEntry Name="TransactionsData.db" Filter="1" />
     <FileEntry Name="UserTasks.xml" Filter="1" />
+    <FileEntry Name="x64_mode" Filter="1" />
     <FileEntry Name="result1\" Filter="1" />
   </GeneralFiles>
 </VugenScriptMetadata>

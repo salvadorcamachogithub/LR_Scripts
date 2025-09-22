@@ -9,7 +9,7 @@ Height=33
 Width=155
 MaxLength=12
 Numerical=False
-LabelText=*User
+LabelText=User
 [ParentWindowData]
 ParentWindowTitle=SAP
 Snapshot=snapshot104

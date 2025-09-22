@@ -1,11 +1,11 @@
 [ObjectProperties]
 type_as_string=GuiOkCodeField
 component_name=okcd
-Text=
-Top=74
-Left=30
-Height=28
-Width=208
+Text=/nva03
+Top=13
+Left=15
+Height=31
+Width=199
 [ParentWindowData]
 ParentWindowTitle=SAP Easy Access
 Snapshot=snapshot1011

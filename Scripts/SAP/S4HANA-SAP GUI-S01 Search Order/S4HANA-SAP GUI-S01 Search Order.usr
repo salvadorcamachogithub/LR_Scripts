@@ -1,14 +1,14 @@
 [General]
 Type=SapGui
 DefaultCfg=default.cfg
-MajorVersion=2023
-MinorVersion=0
+MajorVersion=25
+MinorVersion=3
 ParameterFile=S4HANA-SAP GUI-S01 Search Order.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 LastActiveAction=Action
 DevelopTool=Vugen
-LastModifyVer=2023.0.0.0
+LastModifyVer=25.3.0.0
 ActiveTypes=SapGui
 AdditionalTypes=SapGui
 GenerateTypes=SapGui
@@ -16,7 +16,7 @@ ParamLeftBrace={
 ParamRightBrace=}
 ScriptLanguage=C
 RunType=cci
-LastCodeGenerationVer=2021.1.0.0
+LastCodeGenerationVer=24.3.0.0
 DisableRegenerate=0
 Encoding=
 Description=
@@ -51,7 +51,7 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="S4HANA-SAP GUI-S01-01 Log In__*delimiter*__S4HANA-SAP GUI-S01-03 Search Order__*delimiter*__S4HANA-SAP GUI-S01-04 Log Off__*delimiter*__S4HANA-SAP GUI-S01-02 Enter Tcode"
+Order="S4HANA-SAP GUI-S01-01 Log In__*delimiter*__S4HANA-SAP GUI-S01-02 Enter Tcode__*delimiter*__S4HANA-SAP GUI-S01-03 Search Order__*delimiter*__S4HANA-SAP GUI-S01-04 Log Off"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
@@ -59,6 +59,6 @@ LastReplayedRunName=
 ActiveRunName=
 [Transactions]
 "S4HANA-SAP GUI-S01-01 Log In"=
+"S4HANA-SAP GUI-S01-02 Enter Tcode"=
 "S4HANA-SAP GUI-S01-03 Search Order"=
 "S4HANA-SAP GUI-S01-04 Log Off"=
-"S4HANA-SAP GUI-S01-02 Enter Tcode"=

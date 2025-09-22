@@ -9,7 +9,7 @@ Height=33
 Width=155
 MaxLength=40
 Numerical=False
-LabelText=*Password
+LabelText=Password
 [ParentWindowData]
 ParentWindowTitle=SAP
 Snapshot=snapshot105
