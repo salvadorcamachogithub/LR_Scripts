@@ -3,7 +3,7 @@ Action()
 	
 /*
 
-Updated: 02.2025
+Updated: 09.2026
 Script created by Salvador Camacho
 
 This script was created with best practices, so it is more resilient, such as:
@@ -177,7 +177,7 @@ lr_start_transaction("AOS-Web-S04-02 Sign In");
 		"Snapshot=t38.inf", 
 		"Mode=HTML", 
 		"EncType=text/xml; charset=UTF-8", 
-		"Body=<?xml version=\"1.0\" encoding=\"UTF-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><soap:Body><AccountLoginRequest xmlns=\"com.advantage.online.store.accountservice\"><email></email><loginPassword>{loginUser}</loginPassword><loginUser>{loginUser}</loginUser></AccountLoginRequest></soap:Body></soap:Envelope>", 
+		"Body=<?xml version=\"1.0\" encoding=\"UTF-8\"?><soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\"><soap:Body><AccountLoginRequest xmlns=\"com.advantage.online.store.accountservice\"><email></email><loginPassword>{loginPassword}</loginPassword><loginUser>{loginUser}</loginUser></AccountLoginRequest></soap:Body></soap:Envelope>", 
 		LAST);
 		
 	web_add_header("Authorization",
